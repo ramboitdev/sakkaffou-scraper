@@ -1,5 +1,23 @@
 {
+  "name": "culinary-scraper",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "scrape": "ts-node src/application/commands/RunScraperCommand.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "graphql": "^16.6.0",
+    "apollo-server": "^3.12.0",
+    "reflect-metadata": "^0.1.13",
+    "@prisma/client": "^5.0.0"
+  },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "prisma": "^5.0.0"
   }
 }
